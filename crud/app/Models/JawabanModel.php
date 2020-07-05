@@ -18,4 +18,9 @@ class JawabanModel extends Model
         $jawaban_new = DB::table('jawaban')->insert($data);
         return $jawaban_new;
     }
+
+    public static function drop($id){
+        $drop = DB::table('jawaban')->where('pertanyaan_id', $id)->delete();
+        return $drop;
+    }
 }
