@@ -39,8 +39,7 @@ class PertanyaanController extends Controller
         $data = ['judul'=>request('InputJudul'), 'isi'=>request('InputIsi'), 'created_at'=>date('Y-m-d H:i:s')];
         
         $pertanyaan = PertanyaanModel::update($id, $data);
-        dd(date('Y-m-d H:i:s'));
-        //return redirect('/pertanyaan');
+        return redirect('/pertanyaan');
     }
 
     public function drop($id){

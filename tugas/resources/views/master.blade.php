@@ -737,6 +737,7 @@
         </div>
         <div class="card-body">
           @yield('content')
+          
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
